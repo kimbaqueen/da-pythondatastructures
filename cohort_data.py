@@ -165,7 +165,7 @@ def all_data(filename):
 
     for line in cohort_data:
       first, last, house, advisor, cohort_name = line.rstrip().split('|')
-      all_data.append((f'{first}, {last}', house, advisor, cohort_name))
+      all_data.append((f'{first} {last}', house, advisor, cohort_name))
 
     return all_data
 
